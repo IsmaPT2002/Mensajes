@@ -94,17 +94,6 @@ const puppeteer = require("puppeteer");
     }
 
     await new Promise((resolve) => setTimeout(resolve, 3000));
-
-    // try {
-    //   const videoElements = await page.$$('video[type="video/mp4"]');
-
-    //   for (const element of videoElements) {
-    //     const videoUrl = await page.evaluate((el) => el.src, element);
-    //     console.log("Enlace del video:", videoUrl);
-    //   }
-    // } catch (error) {
-    //   console.log("No se encontraron videos en el chat.");
-    // }
     
     try {
       // Esperar a que aparezcan los selectores de videos en el chat
